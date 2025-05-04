@@ -6,14 +6,23 @@ public abstract class Person {
 	private long adhaar;
 	private long mobile_No;
 	private String email;
+	private Addres addres;
 	public abstract void showRole();
-	public Person(int id, String name, long adhaar, long mobile_No, String email) {
+	public Person(int id, String name, long adhaar, long mobile_No, String email, Addres addres) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.adhaar = adhaar;
 		this.mobile_No = mobile_No;
 		this.email = email;
+		this.addres = addres;
+	}
+	
+	public Addres getAddres() {
+		return addres;
+	}
+	public void setAddres(Addres addres) {
+		this.addres = addres;
 	}
 	public int getId() {
 		return id;
